@@ -2,7 +2,6 @@
 namespace wcf\system\event\listener;
 
 use wcf\data\user\group\UserGroup;
-use wcf\data\user\User;
 use wcf\page\UserPage;
 use wcf\system\WCF;
 
