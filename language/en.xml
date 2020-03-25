@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language languagecode="en" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/language.xsd">
+    <category name="wcf.acp.option">
+        <item name="wcf.acp.option.profile_enable_grouplist"><![CDATA[Display assigned user groups]]></item>
+        <item name="wcf.acp.option.profile_grouplist_hidden_groups"><![CDATA[User groups to hide in the list of assigned user groups]]></item>
+        <item name="wcf.acp.option.profile_grouplist_hidden_groups.description"><![CDATA[The IDs of the user groups, separated by a comma, must be specified. Example: <kbd>1,2,3</kbd>]]></item>
+    </category>
+    <category name="wcf.acp.group">
+        <item name="wcf.acp.group.option.user.profile.canViewUserGroupList"><![CDATA[Can view list of assigned user groups in user profiles]]></item>
+    </category>
+    <category name="wcf.user.profile">
+        <item name="wcf.user.profile.groupList"><![CDATA[User Groups]]></item>
+    </category>
+</language>

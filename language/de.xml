@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language languagecode="de" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/language.xsd">
+    <category name="wcf.acp.option">
+        <item name="wcf.acp.option.profile_enable_grouplist"><![CDATA[Zugewiesene Benutzergruppen anzeigen]]></item>
+        <item name="wcf.acp.option.profile_grouplist_hidden_groups"><![CDATA[Zu versteckende Benutzergruppen in der Auflistung zugewiesener Benutzergruppen]]></item>
+        <item name="wcf.acp.option.profile_grouplist_hidden_groups.description"><![CDATA[Es müssen die IDs der Benutzergruppen, separiert durch ein Komma, angegeben werden. Beispiel: <kbd>1,2,3</kbd>]]></item>
+    </category>
+    <category name="wcf.acp.group">
+        <item name="wcf.acp.group.option.user.profile.canViewUserGroupList"><![CDATA[Kann Auflistung zugewiesener Benutzergruppen in Benutzerprofilen sehen]]></item>
+    </category>
+    <category name="wcf.user.profile">
+        <item name="wcf.user.profile.grouplist"><![CDATA[Benutzergruppen]]></item>
+    </category>
+</language>
