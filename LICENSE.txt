@@ -1,0 +1,105 @@
+Hersteller:
+
+Niklas Friedrich Gerstner
+Heerstr. 12
+70563 Stuttgart
+Deutschland
+
+E-Mail: info@krymo.software
+Telefon: +49 711 20500701 (kein Support)
+Internet: https://krymo.software
+
+§ 1. Geltungsbereich
+
+1.1. Die nachfolgenden Lizenzbestimmungen beziehen sich auf alle von Niklas Friedrich Gerstner (im weiteren Hersteller genannt) kostenlos zur Verfügung gestellten Versionen der Produkte auf der Website https://www.woltlab.com/, https://krymo.software/, https://www.spigotmc.org/ und https://www.mc-market.org/, hergestellt durch Niklas Friedrich Gerstner.
+
+1.2. Es gelten ausschließlich die Bestimmungen dieser Lizenzvereinbarung. Mündlichen Nebenabreden oder etwaigen Geschäftsbedingungen der herunterladenden Person werden bereits jetzt widersprochen.
+
+1.3. Mit dem Download und der Installation des Produktes erklären Sie Ihr Einverständnis mit den vorliegenden Lizenzbestimmungen. Sind Sie mit den vorliegenden Bestimmungen nicht einverstanden, dürfen Sie diese Kopie des Produktes nicht installieren.
+
+1.4. Ihr Recht zur Nutzung des Produktes erlischt automatisch, wenn eine der Bedingungen dieser Lizenzbestimmungen verletzt wird. Beim Erlöschen des Nutzungsrechts sind Sie dazu verpflichtet, das Produkt auf den verwendeten Servern und Datenbanken zu löschen sowie alle Kopien des Produktes, einschließlich der mitgelieferten Dokumentation und etwaigen veränderten und geänderten Versionen des Produktes, zu vernichten.
+
+1.5. Der Hersteller ist für Inhalte, die Dritte in einem erworbenen Produkt einstellen, nicht verantwortlich. Insbesondere ist der Hersteller durch den Vertrieb des Produktes weder Anbieter eigener Informationen gemäß § 8 TDG, noch Dienstanbieter fremder Informationen gemäß § 11 TDG.
+
+§ 2. Lizenzumfang
+
+2.1. Das von Ihnen heruntergeladene Produkt darf uneingeschränkt genutzt werden.
+
+§ 3. Vervielfältigungen
+
+3.2. Sie dürfen die Software vervielfältigen und Kopien erstellen.
+
+3.2. Sie dürfen die Software ohne explizite Erlaubnis nicht verbreiten.
+
+§ 4. Veränderungen
+
+4.1. Sie dürfen den Quellcode des Produktes auf eigenes Risiko verändern, bearbeiten und auf Ihre Bedürfnisse sowohl grafisch als auch funktional anpassen.
+
+4.2. Copyrightvermerke, Seriennummern sowie sonstige der Software- und Quellcodeidentifikation dienende Merkmale des Produktes, insbesondere die sichtbaren Copyright-Hinweise sowie der darin enthaltene Link, dürfen auf keinen Fall entfernt oder verändert werden. Gleiches gilt für eine Unterdrückung oder Unkenntlichmachung.
+
+4.3. Etwas anderes gilt nur dann, wenn Sie vom Hersteller eine Zusatzlizenz erwerben, durch die Sie berechtigt sind, ausschließlich die sichtbaren Copyrighthinweise zu entfernen (Branding-Free-Lizenz).
+
+§ 5. Haftung
+
+5.1. Der Hersteller übernimmt keine Haftung für eventuelle Schäden, Fehler, Datenverluste oder Ähnliches, die durch die Benutzung des Produktes entstehen könnten.
+
+§ 6. Rechtswahl und Gerichtsstand
+
+6.1. Im Hinblick auf sämtliche Rechtsbeziehungen aus diesen Lizenzbestimmungen gilt das Recht der Bundesrepublik Deutschland unter Ausschluss des UN-Kaufrechts.
+
+6.2. Sofern Sie Kaufmann im Sinne des Handelsgesetzbuches, juristische Person des öffentlichen Rechts oder öffentlich rechtliches Sondervermögen sind, wird für sämtliche Streitigkeiten, die im Rahmen der Abwicklung dieser Lizenzvereinbarung entstehen, Stuttgart als Gerichtstand vereinbart.
+
+
+--------------------
+
+
+Manufacturer:
+
+Niklas Friedrich Gerstner
+Heerstr. 12
+70563 Stuttgart
+Germany
+
+Email: info@krymo.software
+Phone: +49 711 20500701 (no support)
+Internet: https://krymo.software
+
+§ 1. Scope of application
+
+1.1 The following license terms refer to all versions of the products provided free of charge by Niklas Friedrich Gerstner (hereinafter referred to as manufacturer) on the website https://www.woltlab.com/, https://krymo.software/, https://www.spigotmc.org/ and https://www.mc-market.org/, manufactured by Niklas Friedrich Gerstner.
+
+1.2 The provisions of this license agreement apply exclusively. Oral subsidiary agreements or any terms and conditions of the person downloading are already contradicted now.
+
+1.3 With the download and installation of the product you declare your agreement with the present license agreement. If you do not agree with these terms, you may not install this copy of the product.
+
+1.4 Your right to use the product expires automatically if one of the terms of this license agreement is violated. When the right of use expires, you are obliged to delete the product from the servers and databases used and to destroy all copies of the product, including the documentation supplied with it and any modified and amended versions of the product.
+
+1.5 The manufacturer is not responsible for content that third parties place in a purchased product. In particular, by distributing the product, the manufacturer is neither a provider of its own information according to § 8 TDG, nor a service provider of external information according to § 11 TDG.
+
+§ 2 Scope of licence
+
+2.1 The product you have downloaded may be used without restriction.
+
+§ 3. Duplications
+
+3.1 You may reproduce and create copies of the software.
+
+3.2 You may not distribute the software without explicit permission.
+
+§ 4. Changes
+
+4.1 You may change and edit the source code of the product at your own risk and adapt it to your needs both graphically and functionally.
+
+4.2 Copyright notices, serial numbers and other features of the product serving to identify the software and source code, in particular the visible copyright notices and the link contained therein, may under no circumstances be removed or changed. The same applies to any suppression or rendering unrecognizable.
+
+4.3 Anything else only applies if you acquire an additional license from the manufacturer, which entitles you to remove only the visible copyright notices (branding-free license).
+
+§ 5 Liability
+
+5.1 The manufacturer accepts no liability for any damage, errors, loss of data or similar that may arise from the use of the product.
+
+§ 6. Choice of law and place of jurisdiction
+
+6.1 The law of the Federal Republic of Germany shall apply with regard to all legal relationships arising from these license provisions, excluding the UN Convention on Contracts for the International Sale of Goods.
+
+6.2 If you are a merchant within the meaning of the German Commercial Code, a legal entity under public law or a special fund under public law, Stuttgart is agreed to be the place of jurisdiction for all disputes arising in connection with the execution of this license agreement.
