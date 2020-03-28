@@ -6,7 +6,7 @@
         <packagedescription><![CDATA[This package provides a list of assigned user groups in user profiles for the WoltLab Suite™ Core.]]></packagedescription>
         <packagedescription language="de"><![CDATA[Dieses Paket stellt eine Auflistung zugewiesener Benutzergruppen in Benutzerprofilen den WoltLab Suite™ Core zur Verfügung.]]></packagedescription>
         <version>1.0.0</version>
-        <date>2020-03-25</date>
+        <date>2020-03-28</date>
         <packageurl><![CDATA[https://krymo.software]]></packageurl>
     </packageinformation>
 
