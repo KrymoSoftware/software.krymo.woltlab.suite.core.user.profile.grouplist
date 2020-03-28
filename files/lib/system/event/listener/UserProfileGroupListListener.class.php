@@ -10,7 +10,7 @@ use wcf\system\WCF;
  *
  * @author      Niklas Friedrich Gerstner
  * @copyright   2020 Krymo Software
- * @license     Krymo Software - Free Products License <https://krymo.software/licensing-conditions/#free-products>
+ * @license     Krymo Software - Free Products License <https://krymo.software/license-terms/#free-products>
  * @package     WoltLabSuite\Core\System\Event\Listener
  */
 class UserProfileGroupListListener implements IParameterizedEventListener {
