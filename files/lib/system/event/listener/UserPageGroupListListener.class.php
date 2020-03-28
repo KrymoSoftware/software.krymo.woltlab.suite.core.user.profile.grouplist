@@ -4,6 +4,7 @@ namespace wcf\system\event\listener;
 use wcf\data\user\group\UserGroup;
 use wcf\page\UserPage;
 use wcf\system\WCF;
+use wcf\util\ArrayUtil;
 
 /**
  * Provides the list of assigned user groups in user profiles.
@@ -13,7 +14,7 @@ use wcf\system\WCF;
  * @license     Krymo Software - Free Products License <https://krymo.software/license-terms/#free-products>
  * @package     WoltLabSuite\Core\System\Event\Listener
  */
-class UserProfileGroupListListener implements IParameterizedEventListener {
+class UserPageGroupListListener implements IParameterizedEventListener {
     /**
      * instance of UserPage
      * @var	UserPage
@@ -30,10 +31,6 @@ class UserProfileGroupListListener implements IParameterizedEventListener {
      * @inheritDoc
      */
     public function execute($eventObj, $className, $eventName, array &$parameters) {
-        if (!PROFILE_ENABLE_GROUPLIST) {
-            return;
-        }
-
         $this->eventObj = $eventObj;
         $this->$eventName();
     }
@@ -51,29 +48,6 @@ class UserProfileGroupListListener implements IParameterizedEventListener {
      * Handles the readData event.
      */
     protected function readData() {
-        $this->userGroups = UserGroup::getGroupsByIDs($this->eventObj->user->getGroupIDs());
-
-        if (!PROFILE_GROUPLIST_HIDDEN_GROUPS) {
-            return;
-        }
-
-        $hiddenGroupIDs = [];
-
-        // removes all whitespaces
-        $hiddenGroups = preg_replace('/\s+/', '', PROFILE_GROUPLIST_HIDDEN_GROUPS);
-
-        if ($groupIDs = explode(",", $hiddenGroups)) {
-            foreach ($groupIDs as $groupID) {
-                if (UserGroup::getGroupByID($groupID)) {
-                    $hiddenGroupIDs[] = $groupID;
-                }
-            }
-        }
-
-        foreach ($this->userGroups as $userGroup) {
-            if (in_array($userGroup->groupID, $hiddenGroupIDs)) {
-                unset($this->userGroups[$userGroup->groupID]);
-            }
-        }
+        $this->userGroups = UserGroup::getGroupsByIDs(array_diff($this->eventObj->user->getGroupIDs(),  ArrayUtil::toIntegerArray(ArrayUtil::trim(explode(',', PROFILE_GROUPLIST_HIDDEN_GROUPS)))));
     }
 }

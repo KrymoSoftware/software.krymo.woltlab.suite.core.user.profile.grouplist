@@ -8,7 +8,6 @@
                 <optiontype>boolean</optiontype>
                 <defaultvalue>0</defaultvalue>
                 <admindefaultvalue>1</admindefaultvalue>
-                <options>profile_enable_grouplist</options>
             </option>
         </options>
     </import>

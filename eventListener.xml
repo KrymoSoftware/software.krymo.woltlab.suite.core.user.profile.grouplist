@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/eventListener.xsd">
     <import>
-        <eventlistener name="userProfileGroupList">
+        <eventlistener name="userPageGroupList">
             <eventclassname>wcf\page\UserPage</eventclassname>
             <eventname>readData,assignVariables</eventname>
-            <listenerclassname>wcf\system\event\listener\UserProfileGroupListListener</listenerclassname>
+            <listenerclassname>wcf\system\event\listener\UserPageGroupListListener</listenerclassname>
             <inherit>1</inherit>
             <environment>user</environment>
         </eventlistener>
