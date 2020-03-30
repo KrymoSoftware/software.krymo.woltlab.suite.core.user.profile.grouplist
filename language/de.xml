@@ -5,7 +5,7 @@
         <item name="wcf.acp.option.profile_grouplist_hidden_groups"><![CDATA[Zu versteckende Benutzergruppen]]></item>
     </category>
     <category name="wcf.acp.group">
-        <item name="wcf.acp.group.option.user.profile.canViewUserGroupList"><![CDATA[Kann Auflistung zugewiesener Benutzergruppen in Benutzerprofilen sehen]]></item>
+        <item name="wcf.acp.group.option.user.profile.canViewUserPageGroupList"><![CDATA[Kann Auflistung zugewiesener Benutzergruppen in Benutzerprofilen sehen]]></item>
     </category>
     <category name="wcf.user.profile">
         <item name="wcf.user.profile.grouplist"><![CDATA[Benutzergruppen]]></item>
