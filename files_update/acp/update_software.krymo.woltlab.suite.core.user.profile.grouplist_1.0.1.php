@@ -3,9 +3,7 @@
 use wcf\data\user\group\option\UserGroupOption;
 use wcf\data\user\group\option\UserGroupOptionAction;
 use wcf\data\user\group\option\UserGroupOptionList;
-use wcf\data\user\group\UserGroup;
 use wcf\data\user\group\UserGroupList;
-use wcf\system\cache\builder\UserGroupCacheBuilder;
 
 /**
  * Handles the update to 1.0.1 and above from 1.0.0.
