@@ -6,6 +6,7 @@
     </category>
     <category name="wcf.acp.group">
         <item name="wcf.acp.group.option.user.profile.canViewUserPageGroupList"><![CDATA[Can view list of assigned user groups in user profiles]]></item>
+        <item name="wcf.acp.group.option.user.profile.canViewUserPageGroupListOwnProfile"><![CDATA[Can view list of assigned user groups in own user profile]]></item>
     </category>
     <category name="wcf.user.profile">
         <item name="wcf.user.profile.groupList"><![CDATA[User Groups]]></item>

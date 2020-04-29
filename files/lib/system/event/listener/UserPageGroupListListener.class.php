@@ -22,6 +22,12 @@ class UserPageGroupListListener implements IParameterizedEventListener {
     protected $eventObj;
 
     /**
+     * true if the user can view the group list
+     * @var boolean
+     */
+    protected $canViewUserPageGroupList = false;
+
+    /**
      * list of user groups which are assigned to the user
      * @var UserGroup[]
      */
@@ -40,6 +46,7 @@ class UserPageGroupListListener implements IParameterizedEventListener {
      */
     protected function assignVariables() {
         WCF::getTPL()->assign([
+            'canViewUserPageGroupList' => $this->canViewUserPageGroupList,
             'userGroups' => $this->userGroups
         ]);
     }
@@ -48,6 +55,15 @@ class UserPageGroupListListener implements IParameterizedEventListener {
      * Handles the readData event.
      */
     protected function readData() {
-        $this->userGroups = UserGroup::getGroupsByIDs(array_diff($this->eventObj->user->getGroupIDs(),  ArrayUtil::toIntegerArray(ArrayUtil::trim(explode(',', PROFILE_GROUPLIST_HIDDEN_GROUPS)))));
+        $this->canViewUserPageGroupList = WCF::getSession()->getPermission('user.profile.canViewUserPageGroupList');
+
+        if (!$this->canViewUserPageGroupList) {
+            $isOwnProfile = $this->eventObj->user->userID == WCF::getUser()->userID;
+            $this->canViewUserPageGroupList = $isOwnProfile && WCF::getSession()->getPermission('user.profile.canViewUserPageGroupListOwnProfile');
+        }
+
+        if ($this->canViewUserPageGroupList) {
+            $this->userGroups = UserGroup::getGroupsByIDs(array_diff($this->eventObj->user->getGroupIDs(),  ArrayUtil::toIntegerArray(ArrayUtil::trim(explode(',', PROFILE_GROUPLIST_HIDDEN_GROUPS)))));
+        }
     }
 }
