@@ -5,8 +5,8 @@
         <packagename language="de"><![CDATA[Auflistung zugewiesener Benutzergruppen in Benutzerprofilen]]></packagename>
         <packagedescription><![CDATA[This package provides a list of assigned user groups in user profiles for the WoltLab Suite™ Core.]]></packagedescription>
         <packagedescription language="de"><![CDATA[Dieses Paket stellt eine Auflistung zugewiesener Benutzergruppen in Benutzerprofilen den WoltLab Suite™ Core zur Verfügung.]]></packagedescription>
-        <version>1.0.2</version>
-        <date>2020-04-29</date>
+        <version>1.0.3</version>
+        <date>2020-05-04</date>
         <packageurl><![CDATA[https://krymo.software]]></packageurl>
     </packageinformation>
 
@@ -33,9 +33,17 @@
         <instruction type="templateListener"/>
     </instructions>
 
+    <instructions type="update" fromversion="1.0.2">
+        <instruction type="file">files_update.tar</instruction>
+        <instruction type="script">acp/update_software.krymo.woltlab.suite.core.user.profile.grouplist_1.0.3.php</instruction>
+        <instruction type="language"/>
+    </instructions>
+
     <instructions type="update" fromversion="1.0.1">
         <instruction type="file"/>
         <instruction type="template"/>
+        <instruction type="file">files_update.tar</instruction>
+        <instruction type="script">acp/update_software.krymo.woltlab.suite.core.user.profile.grouplist_1.0.3.php</instruction>
         <instruction type="language"/>
         <instruction type="userGroupOption"/>
     </instructions>
