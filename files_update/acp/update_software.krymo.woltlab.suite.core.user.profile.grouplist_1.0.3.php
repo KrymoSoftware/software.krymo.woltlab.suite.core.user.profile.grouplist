@@ -13,12 +13,16 @@ use wcf\system\language\LanguageFactory;
  * @license     Krymo Software - Free Products License <https://krymo.software/license-terms/#free-products>
  */
 
-$packageID = $this->installation->getPackageID();
-$languageItemList = new LanguageItemList();
-$languageItemList->getConditionBuilder()->add('packageID = ?', [$packageID]);
-$languageItemList->getConditionBuilder()->add('languageID = ?', [LanguageFactory::getInstance()->getLanguageByCode('en')->languageID]);
-$languageItemList->getConditionBuilder()->add('languageItem = ?', ['wcf.user.profile.groupList']);
-$languageItemList->readObjects();
+$enLanguage = LanguageFactory::getInstance()->getLanguageByCode('en');
 
-$action = new LanguageItemAction($languageItemList->getObjects(), 'delete');
-$action->executeAction();
+if ($enLanguage) {
+    $packageID = $this->installation->getPackageID();
+    $languageItemList = new LanguageItemList();
+    $languageItemList->getConditionBuilder()->add('packageID = ?', [$packageID]);
+    $languageItemList->getConditionBuilder()->add('languageID = ?', [$enLanguage->languageID]);
+    $languageItemList->getConditionBuilder()->add('languageItem = ?', ['wcf.user.profile.groupList']);
+    $languageItemList->readObjects();
+
+    $action = new LanguageItemAction($languageItemList->getObjects(), 'delete');
+    $action->executeAction();
+}
