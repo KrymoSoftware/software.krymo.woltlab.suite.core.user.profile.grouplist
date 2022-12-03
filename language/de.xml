@@ -3,6 +3,10 @@
     <category name="wcf.acp.option">
         <item name="wcf.acp.option.category.user.profile.grouplist"><![CDATA[Auflistung zugewiesener Benutzergruppen in Benutzerprofilen]]></item>
         <item name="wcf.acp.option.profile_grouplist_hidden_groups"><![CDATA[Zu versteckende Benutzergruppen]]></item>
+        <item name="wcf.acp.option.profile_grouplist_sort_by"><![CDATA[Sortierung der Benutzergruppen]]></item>
+        <item name="wcf.acp.option.profile_grouplist_sort_by.priority_desc"><![CDATA[Nach Priorität (absteigend)]]></item>
+        <item name="wcf.acp.option.profile_grouplist_sort_by.priority_asc"><![CDATA[Nach Priorität (aufsteigend)]]></item>
+        <item name="wcf.acp.option.profile_grouplist_sort_by.alphabetical"><![CDATA[Alphabetisch]]></item>
     </category>
     <category name="wcf.acp.group">
         <item name="wcf.acp.group.option.user.profile.canViewUserPageGroupList"><![CDATA[Kann Auflistung zugewiesener Benutzergruppen in Benutzerprofilen sehen]]></item>

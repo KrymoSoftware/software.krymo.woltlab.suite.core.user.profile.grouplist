@@ -9,3 +9,4 @@
 
 // option constants
 define('PROFILE_GROUPLIST_HIDDEN_GROUPS', '');
+define('PROFILE_GROUPLIST_SORT_BY', '');

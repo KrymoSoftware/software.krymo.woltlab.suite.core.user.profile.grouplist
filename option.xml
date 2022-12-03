@@ -11,6 +11,14 @@
                 <categoryname>user.profile.grouplist</categoryname>
                 <optiontype>userGroup</optiontype>
             </option>
+            <option name="profile_grouplist_sort_by">
+                <categoryname>user.profile.grouplist</categoryname>
+                <optiontype>select</optiontype>
+                <defaultvalue>priority_desc</defaultvalue>
+                <selectoptions>priority_desc:wcf.acp.option.profile_grouplist_sort_by.priority_desc
+priority_asc:wcf.acp.option.profile_grouplist_sort_by.priority_asc
+alphabetical:wcf.acp.option.profile_grouplist_sort_by.alphabetical</selectoptions>
+            </option>
         </options>
     </import>
 </data>

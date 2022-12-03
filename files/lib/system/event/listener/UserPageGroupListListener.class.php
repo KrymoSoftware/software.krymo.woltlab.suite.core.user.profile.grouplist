@@ -10,7 +10,7 @@ use wcf\util\ArrayUtil;
  * Provides the list of assigned user groups in user profiles.
  *
  * @author      Niklas Friedrich Gerstner
- * @copyright   2020 Krymo Software
+ * @copyright   2022 Krymo Software
  * @license     Krymo Software - Free Products License <https://krymo.software/license-terms/#free-products>
  * @package     WoltLabSuite\Core\System\Event\Listener
  */
@@ -55,15 +55,53 @@ class UserPageGroupListListener implements IParameterizedEventListener {
      * Handles the readData event.
      */
     protected function readData() {
+        $user = $this->eventObj->user;
         $this->canViewUserPageGroupList = WCF::getSession()->getPermission('user.profile.canViewUserPageGroupList');
 
         if (!$this->canViewUserPageGroupList) {
-            $isOwnProfile = $this->eventObj->user->userID == WCF::getUser()->userID;
+            $isOwnProfile = $user->userID === WCF::getUser()->userID;
             $this->canViewUserPageGroupList = $isOwnProfile && WCF::getSession()->getPermission('user.profile.canViewUserPageGroupListOwnProfile');
         }
 
         if ($this->canViewUserPageGroupList) {
-            $this->userGroups = UserGroup::getGroupsByIDs(array_diff($this->eventObj->user->getGroupIDs(),  ArrayUtil::toIntegerArray(ArrayUtil::trim(explode(',', PROFILE_GROUPLIST_HIDDEN_GROUPS)))));
+            $hiddenGroupIDs = ArrayUtil::toIntegerArray(ArrayUtil::trim(explode(',', PROFILE_GROUPLIST_HIDDEN_GROUPS)));
+            $shownGroupIDs = array_diff($user->getGroupIDs(), $hiddenGroupIDs);
+            $userGroups = UserGroup::getGroupsByIDs($shownGroupIDs);
+
+            switch(PROFILE_GROUPLIST_SORT_BY) {
+                case 'priority_desc': {
+                    \uasort($userGroups, static function (UserGroup $groupA, UserGroup $groupB) {
+                        return static::compareGroupPriority($groupA, $groupB);
+                    });
+                    break;
+                }
+                case 'priority_asc': {
+                    \uasort($userGroups, static function (UserGroup $groupA, UserGroup $groupB) {
+                        return static::compareGroupPriority($groupA, $groupB, false);
+                    });
+                    break;
+                }
+                case 'alphabetical': {
+                    UserGroup::sortGroups($userGroups);
+                    break;
+                }
+            }
+
+            $this->userGroups = $userGroups;
         }
+    }
+
+    private static function compareGroupPriority(UserGroup $groupA, UserGroup $groupB, bool $sortDescending = true): int {
+        if ($groupA->priority === $groupB->priority) {
+            return 0;
+        }
+
+        $value = ($groupA->priority < $groupB->priority) ? 1 : -1;
+
+        if (!$sortDescending) {
+            $value *= -1;
+        }
+
+        return $value;
     }
 }
