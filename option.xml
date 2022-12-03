@@ -7,7 +7,6 @@
             </category>
         </categories>
         <options>
-            <!-- user.profile.grouplist -->
             <option name="profile_grouplist_hidden_groups">
                 <categoryname>user.profile.grouplist</categoryname>
                 <optiontype>userGroup</optiontype>
