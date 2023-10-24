@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language languagecode="de" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/language.xsd">
-    <category name="wcf.acp.option">
-        <item name="wcf.acp.option.category.user.profile.grouplist"><![CDATA[Auflistung zugewiesener Benutzergruppen in Benutzerprofilen]]></item>
-        <item name="wcf.acp.option.profile_grouplist_hidden_groups"><![CDATA[Zu versteckende Benutzergruppen]]></item>
-        <item name="wcf.acp.option.profile_grouplist_sort_by"><![CDATA[Sortierung der Benutzergruppen]]></item>
-        <item name="wcf.acp.option.profile_grouplist_sort_by.priority_desc"><![CDATA[Nach Priorität (absteigend)]]></item>
-        <item name="wcf.acp.option.profile_grouplist_sort_by.priority_asc"><![CDATA[Nach Priorität (aufsteigend)]]></item>
-        <item name="wcf.acp.option.profile_grouplist_sort_by.alphabetical"><![CDATA[Alphabetisch]]></item>
-    </category>
-    <category name="wcf.acp.group">
-        <item name="wcf.acp.group.option.user.profile.canViewUserPageGroupList"><![CDATA[Kann Auflistung zugewiesener Benutzergruppen in Benutzerprofilen sehen]]></item>
-        <item name="wcf.acp.group.option.user.profile.canViewUserPageGroupListOwnProfile"><![CDATA[Kann Auflistung zugewiesener Benutzergruppen im eigenen Benutzerprofil sehen]]></item>
-    </category>
-    <category name="wcf.user.profile">
-        <item name="wcf.user.profile.grouplist"><![CDATA[Benutzergruppen]]></item>
-    </category>
+<language languagecode="de" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/6.0/language.xsd">
+	<import>
+		<category name="wcf.acp.option">
+			<item name="wcf.acp.option.category.user.profile.grouplist"><![CDATA[Auflistung zugewiesener Benutzergruppen in Benutzerprofilen]]></item>
+			<item name="wcf.acp.option.profile_grouplist_hidden_groups"><![CDATA[Zu versteckende Benutzergruppen]]></item>
+			<item name="wcf.acp.option.profile_grouplist_sort_by"><![CDATA[Sortierung der Benutzergruppen]]></item>
+			<item name="wcf.acp.option.profile_grouplist_sort_by.priority_desc"><![CDATA[Nach Priorität (absteigend)]]></item>
+			<item name="wcf.acp.option.profile_grouplist_sort_by.priority_asc"><![CDATA[Nach Priorität (aufsteigend)]]></item>
+			<item name="wcf.acp.option.profile_grouplist_sort_by.alphabetical"><![CDATA[Alphabetisch]]></item>
+		</category>
+		<category name="wcf.acp.group">
+			<item name="wcf.acp.group.option.user.profile.canViewUserPageGroupList"><![CDATA[Kann Auflistung zugewiesener Benutzergruppen in Benutzerprofilen sehen]]></item>
+			<item name="wcf.acp.group.option.user.profile.canViewUserPageGroupListOwnProfile"><![CDATA[Kann Auflistung zugewiesener Benutzergruppen im eigenen Benutzerprofil sehen]]></item>
+		</category>
+		<category name="wcf.user.profile">
+			<item name="wcf.user.profile.grouplist"><![CDATA[Benutzergruppen]]></item>
+		</category>
+	</import>
 </language>
