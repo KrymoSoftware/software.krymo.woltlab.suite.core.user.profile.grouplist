@@ -15,7 +15,7 @@ use wcf\util\ArrayUtil;
  * @license     Krymo Software - Free Products License <https://krymo.software/license-terms/#free-products>
  * @package     WoltLabSuite\Core\System\Event\Listener
  */
-class UserPageGroupListListener implements IParameterizedEventListener
+final class UserPageGroupListListener implements IParameterizedEventListener
 {
     /**
      * instance of UserPage
