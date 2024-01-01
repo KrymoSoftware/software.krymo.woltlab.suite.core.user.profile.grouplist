@@ -1,8 +1,8 @@
 Hersteller:
 
 Niklas Friedrich Gerstner
-Heerstr. 12
-70563 Stuttgart
+Zwernitzer Str. 12
+81243 München
 Deutschland
 
 E-Mail: info@krymo.software
@@ -11,7 +11,7 @@ Internet: https://krymo.software
 
 § 1. Geltungsbereich
 
-1.1. Die nachfolgenden Lizenzbestimmungen beziehen sich auf alle von Niklas Friedrich Gerstner (im weiteren Hersteller genannt) kostenlos zur Verfügung gestellten Versionen der Produkte auf der Website https://www.woltlab.com/, https://krymo.software/, https://www.spigotmc.org/ und https://www.mc-market.org/, hergestellt durch Niklas Friedrich Gerstner.
+1.1. Die nachfolgenden Lizenzbestimmungen beziehen sich auf alle kostenlos zur Verfügung gestellten Versionen der Produkte auf den Websites https://www.woltlab.com/ und https://krymo.software/, die durch Niklas Friedrich Gerstner (im weiteren Hersteller genannt) hergestellt worden sind.
 
 1.2. Es gelten ausschließlich die Bestimmungen dieser Lizenzvereinbarung. Mündlichen Nebenabreden oder etwaigen Geschäftsbedingungen der herunterladenden Person werden bereits jetzt widersprochen.
 
@@ -47,7 +47,7 @@ Internet: https://krymo.software
 
 6.1. Im Hinblick auf sämtliche Rechtsbeziehungen aus diesen Lizenzbestimmungen gilt das Recht der Bundesrepublik Deutschland unter Ausschluss des UN-Kaufrechts.
 
-6.2. Sofern Sie Kaufmann im Sinne des Handelsgesetzbuches, juristische Person des öffentlichen Rechts oder öffentlich rechtliches Sondervermögen sind, wird für sämtliche Streitigkeiten, die im Rahmen der Abwicklung dieser Lizenzvereinbarung entstehen, Stuttgart als Gerichtstand vereinbart.
+6.2. Sofern Sie Kaufmann im Sinne des Handelsgesetzbuches, juristische Person des öffentlichen Rechts oder öffentlich rechtliches Sondervermögen sind, wird für sämtliche Streitigkeiten, die im Rahmen der Abwicklung dieser Lizenzvereinbarung entstehen, München als Gerichtstand vereinbart.
 
 
 --------------------
@@ -56,8 +56,8 @@ Internet: https://krymo.software
 Manufacturer:
 
 Niklas Friedrich Gerstner
-Heerstr. 12
-70563 Stuttgart
+Zwernitzer Str. 12
+81243 München
 Germany
 
 Email: info@krymo.software
@@ -66,7 +66,7 @@ Internet: https://krymo.software
 
 § 1. Scope of application
 
-1.1 The following license terms refer to all versions of the products provided free of charge by Niklas Friedrich Gerstner (hereinafter referred to as manufacturer) on the website https://www.woltlab.com/, https://krymo.software/, https://www.spigotmc.org/ and https://www.mc-market.org/, manufactured by Niklas Friedrich Gerstner.
+1.1 The following license terms refer to all versions of the products provided free of charge on the websites https://www.woltlab.com/ and https://krymo.software/ that were manufactured by Niklas Friedrich Gerstner (hereinafter referred to as manufacturer).
 
 1.2 The provisions of this license agreement apply exclusively. Oral subsidiary agreements or any terms and conditions of the person downloading are already contradicted now.
 
@@ -102,4 +102,4 @@ Internet: https://krymo.software
 
 6.1 The law of the Federal Republic of Germany shall apply with regard to all legal relationships arising from these license provisions, excluding the UN Convention on Contracts for the International Sale of Goods.
 
-6.2 If you are a merchant within the meaning of the German Commercial Code, a legal entity under public law or a special fund under public law, Stuttgart is agreed to be the place of jurisdiction for all disputes arising in connection with the execution of this license agreement.
+6.2 If you are a merchant within the meaning of the German Commercial Code, a legal entity under public law or a special fund under public law, München in Germany is agreed to be the place of jurisdiction for all disputes arising in connection with the execution of this license agreement.
