@@ -17,29 +17,26 @@ use wcf\util\ArrayUtil;
  */
 final class UserPageGroupListListener implements IParameterizedEventListener
 {
-    /**
-     * instance of UserPage
-     * @var UserPage
-     */
-    protected $eventObj;
+    protected UserPage $eventObj;
 
-    /**
-     * true if the user can view the group list
-     * @var boolean
-     */
-    protected $canViewUserPageGroupList = false;
+    protected bool $canViewUserPageGroupList = false;
 
     /**
      * list of user groups which are assigned to the user
+     *
      * @var UserGroup[]
      */
-    protected $userGroups = [];
+    protected array $userGroups = [];
 
     /**
      * @inheritDoc
      */
-    public function execute($eventObj, $className, $eventName, array &$parameters)
-    {
+    public function execute(
+        $eventObj,
+        $className,
+        $eventName,
+        array &$parameters
+    ): void {
         $this->eventObj = $eventObj;
         $this->{$eventName}();
     }
@@ -47,7 +44,7 @@ final class UserPageGroupListListener implements IParameterizedEventListener
     /**
      * Handles the assignVariables event.
      */
-    protected function assignVariables()
+    protected function assignVariables(): void
     {
         WCF::getTPL()->assign([
             'canViewUserPageGroupList' => $this->canViewUserPageGroupList,
@@ -58,16 +55,19 @@ final class UserPageGroupListListener implements IParameterizedEventListener
     /**
      * Handles the readData event.
      */
-    protected function readData()
+    protected function readData(): void
     {
         $user = $this->eventObj->user;
-        $this->canViewUserPageGroupList = WCF::getSession()->getPermission('user.profile.canViewUserPageGroupList');
+        $this->canViewUserPageGroupList = WCF::getSession()->getPermission(
+            'user.profile.canViewUserPageGroupList'
+        );
 
         if (!$this->canViewUserPageGroupList) {
             $isOwnProfile = $user->userID === WCF::getUser()->userID;
-            $this->canViewUserPageGroupList = $isOwnProfile && WCF::getSession()->getPermission(
-                'user.profile.canViewUserPageGroupListOwnProfile'
-            );
+            $this->canViewUserPageGroupList = $isOwnProfile
+                && WCF::getSession()->getPermission(
+                    'user.profile.canViewUserPageGroupListOwnProfile'
+                );
         }
 
         if ($this->canViewUserPageGroupList) {
@@ -79,15 +79,28 @@ final class UserPageGroupListListener implements IParameterizedEventListener
 
             switch (PROFILE_GROUPLIST_SORT_BY) {
                 case 'priority_desc':
-                    \uasort($userGroups, static function (UserGroup $groupA, UserGroup $groupB) {
-                        return static::compareGroupPriority($groupA, $groupB);
-                    });
+                    \uasort(
+                        $userGroups,
+                        function (UserGroup $groupA, UserGroup $groupB) {
+                            return $this->compareGroupPriority(
+                                $groupA,
+                                $groupB
+                            );
+                        }
+                    );
                     break;
 
                 case 'priority_asc':
-                    \uasort($userGroups, static function (UserGroup $groupA, UserGroup $groupB) {
-                        return static::compareGroupPriority($groupA, $groupB, false);
-                    });
+                    \uasort(
+                        $userGroups,
+                        function (UserGroup $groupA, UserGroup $groupB) {
+                            return $this->compareGroupPriority(
+                                $groupA,
+                                $groupB,
+                                false
+                            );
+                        }
+                    );
                     break;
 
                 case 'alphabetical':
@@ -99,8 +112,11 @@ final class UserPageGroupListListener implements IParameterizedEventListener
         }
     }
 
-    private static function compareGroupPriority(UserGroup $groupA, UserGroup $groupB, bool $sortDescending = true): int
-    {
+    private function compareGroupPriority(
+        UserGroup $groupA,
+        UserGroup $groupB,
+        bool $sortDescending = true
+    ): int {
         if ($groupA->priority === $groupB->priority) {
             return 0;
         }
