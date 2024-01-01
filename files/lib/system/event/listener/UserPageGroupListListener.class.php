@@ -11,7 +11,7 @@ use wcf\util\ArrayUtil;
  * Provides the list of assigned user groups in user profiles.
  *
  * @author      Niklas Friedrich Gerstner
- * @copyright   2022 Krymo Software
+ * @copyright   2024 Krymo Software
  * @license     Krymo Software - Free Products License <https://krymo.software/license-terms/#free-products>
  * @package     WoltLabSuite\Core\System\Event\Listener
  */

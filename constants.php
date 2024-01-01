@@ -3,8 +3,8 @@
  * Defines constants for autocompletion in IDEs. This file is not meant to be actively used anywhere!
  *
  * @author      Niklas Friedrich Gerstner
- * @copyright   2022 Krymo Software
- * @license     Krymo Software - Commercial Products License <https://krymo.software/license-terms/#commercial-products>
+ * @copyright   2024 Krymo Software
+ * @license     Krymo Software - Free Products License <https://krymo.software/license-terms/#free-products>
  */
 
 // option constants
