@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/option.xsd">
-    <import>
-        <categories>
-            <category name="user.profile.grouplist">
-                <parent>user.profile</parent>
-            </category>
-        </categories>
-        <options>
-            <option name="profile_grouplist_hidden_groups">
-                <categoryname>user.profile.grouplist</categoryname>
-                <optiontype>userGroup</optiontype>
-            </option>
-            <option name="profile_grouplist_sort_by">
-                <categoryname>user.profile.grouplist</categoryname>
-                <optiontype>select</optiontype>
-                <defaultvalue>priority_desc</defaultvalue>
-                <selectoptions>priority_desc:wcf.acp.option.profile_grouplist_sort_by.priority_desc
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/6.0/option.xsd">
+	<import>
+		<categories>
+			<category name="user.profile.grouplist">
+				<parent>user.profile</parent>
+			</category>
+		</categories>
+		<options>
+			<option name="profile_grouplist_hidden_groups">
+				<categoryname>user.profile.grouplist</categoryname>
+				<optiontype>userGroup</optiontype>
+			</option>
+			<option name="profile_grouplist_sort_by">
+				<categoryname>user.profile.grouplist</categoryname>
+				<optiontype>select</optiontype>
+				<defaultvalue>priority_desc</defaultvalue>
+				<selectoptions>priority_desc:wcf.acp.option.profile_grouplist_sort_by.priority_desc
 priority_asc:wcf.acp.option.profile_grouplist_sort_by.priority_asc
 alphabetical:wcf.acp.option.profile_grouplist_sort_by.alphabetical</selectoptions>
-            </option>
-        </options>
-    </import>
+			</option>
+		</options>
+	</import>
 </data>
